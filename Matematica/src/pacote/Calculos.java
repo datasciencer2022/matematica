@@ -13,6 +13,33 @@ public class Calculos {
 		return resp;
 	}
 	
+	// verificacao se par ou impar
+	// true é par e false é impar
+	public boolean verifica(int num) {
+		boolean resp = false;
+		if (num % 2 == 0) {
+			resp = true;
+		}
+		return resp;
+	}
+	
+	
+	// verificacao se eh primo
+		// true eh primo e false não eh
+		public boolean ehPrimo (int num) {
+			boolean resp = false;  int cont = 0;
+			for (int i=num; i>0 ; i--) {
+				if (num % i == 0) {
+					cont++;
+				}
+			}
+			if (cont == 2) {
+				resp = true;
+			}
+			return resp;
+		}
+}
+	
 	
 	
 	

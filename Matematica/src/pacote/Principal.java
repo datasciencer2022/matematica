@@ -17,13 +17,14 @@ public class Principal {
 		String resultado = "";
 		Calculos calc = new Calculos();
 		int maior = calc.maior(num1, num2);
-		if (maior == 0) {
+		if (num1 == num2) {
 			resultado = "são iguais";
 		}
 		else {
 			resultado = "o maior é: " + maior;
 		}
-		
+		// verificar se eh par ou impar
+		// verificar se eh primo e exibir se eh ou nao
 		
 		// exibição do resultado
 		System.out.println(resultado);
